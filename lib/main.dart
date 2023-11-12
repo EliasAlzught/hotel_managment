@@ -56,7 +56,6 @@ class _AppMaterialState extends State<AppMaterial> {
         if (state is ApplicationRestartState) {
           //todo process restart state
         }
-
       },
       builder: (context, state){
         return MaterialApp(
