@@ -2,6 +2,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+
 import 'package:get_it/get_it.dart';
 import 'package:hotel_managment/resource/providers/hotel_providers.dart';
 import 'package:hotel_managment/style/themes/dark_theme.dart';
@@ -15,6 +17,7 @@ import 'layout/main_layout.dart';
 
 void main() async {
   final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+ // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   try {
     await Future.wait([
@@ -25,6 +28,7 @@ void main() async {
   } finally {
     GetIt.I.allowReassignment = true;
     GetIt.I.registerSingleton<HotelRepository>(HotelRepository());
+   // FlutterNativeSplash.remove();
     // FlutterNativeSplash.remove();
 
     runApp(

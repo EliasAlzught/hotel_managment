@@ -134,11 +134,11 @@ class _ShowBottomSheetFilterState extends State<ShowBottomSheetFilter> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-buildHotelClassContainer('assets/png/1.png'),
-            buildRatingContainer(AppColors.orange, "7"),
-            buildRatingContainer(AppColors.green100, "7.5"),
-            buildRatingContainer(AppColors.green200, "8"),
-            buildRatingContainer(AppColors.darkGreen, "8.5"),
+            buildHotelClassContainer('assets/svg/star00.svg'),
+            buildHotelClassContainer('assets/svg/star01.svg'),
+            buildHotelClassContainer('assets/svg/star02.svg'),
+            buildHotelClassContainer('assets/svg/star03.svg'),
+            buildHotelClassContainer('assets/svg/star04.svg'),
           ],
         )
       ]),
@@ -292,9 +292,12 @@ buildHotelClassContainer('assets/png/1.png'),
                 fontSize: AppFontSize.medium,
                 decorationThickness: 2.3),
           ),
-          InkWell(child: SvgPicture.asset('assets/svg/cancel.svg'),onTap: (){
-            Navigator.pop(context);
-          },)
+          InkWell(
+            child: SvgPicture.asset('assets/svg/cancel.svg'),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          )
         ]),
       ),
     );

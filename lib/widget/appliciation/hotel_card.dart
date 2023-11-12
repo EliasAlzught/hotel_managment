@@ -98,7 +98,7 @@ class _HotelCardState extends State<HotelCard> {
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                              color: AppColors.xxx,
+                              color: AppColors.darkGreen2,
                               borderRadius: BorderRadius.circular(100)),
                           child: Center(
                               child: Padding(
@@ -150,7 +150,7 @@ class _HotelCardState extends State<HotelCard> {
                                 ),
                                 Container(
                                   decoration: BoxDecoration(
-                                    color: AppColors.x2,
+                                    color: AppColors.skyColor,
                                     borderRadius: BorderRadius.circular(6),
                                   ),
                                   child: Padding(

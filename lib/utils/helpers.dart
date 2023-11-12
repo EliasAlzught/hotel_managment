@@ -37,12 +37,14 @@ Widget buildRatingContainer(Color containerColor, String rating) {
 
 Widget buildHotelClassContainer(String imagePath) {
   return Container(
-    height: 5.h,
-    width: 5.h,
+    height: 4.5.h,
+    width: 4.5.h,
     decoration: BoxDecoration(borderRadius: BorderRadius.circular(4)),
     child: Center(
         child: SvgPicture.asset(
-      'assets/svg/star-01.svg',
+          height: 5.h,
+          width: 5.h,
+          imagePath,
       fit: BoxFit.contain,
     )),
   );
