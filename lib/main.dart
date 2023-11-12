@@ -56,12 +56,7 @@ class _AppMaterialState extends State<AppMaterial> {
         if (state is ApplicationRestartState) {
           //todo process restart state
         }
-        // if(state is ApplicationErrorState){
-        //   Fluttertoast.showToast(msg: state.toString());
-        // }
-        // // if (state is AppLinkState){
-        // //
-        // // }
+
       },
       builder: (context, state){
         return MaterialApp(

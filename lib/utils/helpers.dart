@@ -41,8 +41,8 @@ Widget buildHotelClassContainer(String imagePath) {
     width: 5.h,
     decoration: BoxDecoration(borderRadius: BorderRadius.circular(4)),
     child: Center(
-        child: Image.asset(
-      'assets/png/1.png',
+        child: SvgPicture.asset(
+      'assets/svg/star-01.svg',
       fit: BoxFit.contain,
     )),
   );
