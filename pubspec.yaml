@@ -1,0 +1,79 @@
+name: hotel_managment
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.0.1
+  get_it: ^7.2.0
+  dio: ^4.0.6
+  hive: ^2.2.1
+  hive_flutter: ^1.1.0
+  package_info_plus: ^1.4.2
+  cached_network_image: ^3.1.0
+  shimmer: ^2.0.0
+  flutter_svg: ^1.1.6
+  modal_bottom_sheet: ^2.0.0
+  internet_popup: ^1.0.8+5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/svg/
+    - assets/png/
+  fonts:
+    - family: HotelManagement
+      fonts:
+      - asset: assets/fonts/HotelManagement.ttf
+    - family: Robot
+      fonts:
+        - asset: assets/fonts/Robot/Roboto-Regular.ttf
+    - family: RobotMeduim
+      fonts:
+        - asset: assets/fonts/Robot/Roboto-Medium.ttf
+    - family: RobotBold
+      fonts:
+        - asset: assets/fonts/Robot/Roboto-Bold.ttf
+    - family: RobotThin
+      fonts:
+        - asset: assets/fonts/Robot/Roboto-Thin.ttf
+
+
+
+
+
+
+
+
