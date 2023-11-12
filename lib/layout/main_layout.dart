@@ -25,7 +25,7 @@ class _MainLayoutState extends State<MainLayout> {
 
   @override
   void initState() {
-    // InternetPopup().initialize(context: context);
+    InternetPopup().initialize(context: context);
     _bloc = BlocProvider.of<HotelBloc>(context);
     _bloc.add(GetHotelsEvent());
     // TODO: implement initState
