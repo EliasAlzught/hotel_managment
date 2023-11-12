@@ -69,6 +69,7 @@ class _AppMaterialState extends State<AppMaterial> {
           navigatorKey: navigatorKey,
           title: ApplicationCubit.info.appName,
           home: BlocProvider(
+
             create: (context) => HotelBloc(),
             child: const MainLayout(),
           ),
